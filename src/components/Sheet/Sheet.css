@@ -1,0 +1,23 @@
+.sheet {
+    width: 100%;
+    height: 600px;
+    max-width: 600px;
+    background-color: var(--color-sheet);
+    margin: 10px 0;
+    overflow-y: scroll;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.sheet::-webkit-scrollbar {
+    width: 10px;
+}
+
+.sheet::-webkit-scrollbar-track {
+    background: var(--color-background-btn);
+}
+
+.sheet::-webkit-scrollbar-thumb {
+    background-color: var(--color-text-btn);
+    border-radius: 20px;
+}

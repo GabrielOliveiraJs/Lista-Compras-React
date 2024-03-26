@@ -1,0 +1,19 @@
+.span-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    transition: 0.4s;
+    border: none;
+    background-color: transparent;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.hover-add:hover {
+    color: var(--color-background-btn-hover);
+}
+
+.hover-remove:hover {
+    color: red;
+}

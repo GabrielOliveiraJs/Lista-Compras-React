@@ -1,0 +1,15 @@
+.main-input {
+    font-size: 1.5rem;
+    padding: 4px 2px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: 1px solid var(--color-outline);
+    -webkit-box-shadow: 5px 5px 10px 1px rgba(34, 34, 34, 0.4);
+    -moz-box-shadow: 5px 5px 10px 1px rgba(34, 34, 34, 0.4);
+    box-shadow: 5px 5px 10px 1px rgba(34, 34, 34, 0.4);
+}
+
+.main-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
