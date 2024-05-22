@@ -1,17 +1,23 @@
 import SheetItem from '../SheetItem/Index'
 import './Sheet.css'
 
-const Sheet = (props) => {
+const Sheet = ({ listOfItens, deleteSelectedItem }) => {
 
     const deleteItem = (id) => {
-        props.deleteSelectedItem(id)
-    } 
+        deleteSelectedItem(id)
+    }
 
     return (
         <ul className='sheet'>
             {
-                props.listOfItens.map(item =>
-                    <SheetItem id={item.id} text={item.itemName} quantity={item.quantity} deleteItem={deleteItem} />
+                listOfItens.map(item =>
+                    <SheetItem
+                        key={item.id}
+                        id={item.id}
+                        text={item.itemName}
+                        quantity={item.quantity}
+                        deleteItem={deleteItem}
+                    />
                 )
             }
         </ul>

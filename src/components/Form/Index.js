@@ -45,7 +45,11 @@ const Form = ({ createdItem }) => {
 
       <div className='qty-container'>
 
-        <SpanButton className="icons" hoverClass='hover-add' onClick={() => handleClickSpanButton('add')}>
+        <SpanButton
+          className="icons"
+          hoverClass='hover-add'
+          onClick={() => handleClickSpanButton('add')}
+        >
           <MdAddCircleOutline />
         </SpanButton>
 
@@ -57,7 +61,11 @@ const Form = ({ createdItem }) => {
           changedValue={value => setQuantity(value)}
         />
 
-        <SpanButton className="icons" hoverClass='hover-add' onClick={() => handleClickSpanButton('remove')} >
+        <SpanButton
+          className="icons"
+          hoverClass='hover-add'
+          onClick={() => handleClickSpanButton('remove')}
+        >
           <MdOutlineRemoveCircleOutline />
         </SpanButton>
 
