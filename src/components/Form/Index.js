@@ -1,9 +1,9 @@
-import { MdOutlinePlaylistAdd } from "react-icons/md";
-import { MdAddCircleOutline, MdOutlineRemoveCircleOutline } from "react-icons/md";
+import { MdOutlinePlaylistAdd } from "react-icons/md"
+import { MdAddCircleOutline, MdOutlineRemoveCircleOutline } from "react-icons/md"
 import { v4 as uuidv4 } from 'uuid'
-import { useState } from "react";
+import { useState } from "react"
 import Input from '../Input/Index'
-import SpanButton from "../SpanButton/Index";
+import SpanButton from "../SpanButton/Index"
 import './Form.css'
 
 const Form = ({ createdItem }) => {

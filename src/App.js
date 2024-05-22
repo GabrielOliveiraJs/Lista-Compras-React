@@ -1,17 +1,13 @@
 import { v4 as uuidv4 } from 'uuid'
-import { useState } from 'react';
-import Form from './components/Form/Index';
-import Sheet from './components/Sheet/Index';
-import './reset.css';
+import { useState } from 'react'
+import Form from './components/Form/Index'
+import Sheet from './components/Sheet/Index'
+import './reset.css'
+import list from './db/db.json'
+
 
 function App() {
-  const [itens, setItens] = useState([
-    { id: uuidv4(), itemName: 'Pães', quantity: 2 },
-    { id: uuidv4(), itemName: 'ovos', quantity: 12 },
-    { id: uuidv4(), itemName: 'leite', quantity: 4 },
-    { id: uuidv4(), itemName: 'margarina', quantity: 1 },
-    { id: uuidv4(), itemName: 'café', quantity: 1 }
-  ])
+  const [itens, setItens] = useState(list)
 
   // function deleteItem(id) {
   //   setItens(itens.filter(item => item.id !== id))
@@ -32,7 +28,7 @@ function App() {
       <Form createdItem={item => newItemCreated(item)} />
       <Sheet listOfItens = {itens} deleteSelectedItem={deleteSelectedItem} />
     </div>
-  );
+  )
 }
 
 export default App;
